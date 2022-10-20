@@ -1,0 +1,118 @@
+<html>
+
+<head>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#Content").load("xz.html");
+    });
+
+  </script>
+</head>
+
+<link href="ortho/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<body>
+<div id="navbar">
+
+  <span><a href=""><img id="logo" src="./assets/images/logo.svg" alt=""></a></span>
+  <div id="logo1"><img src="./assets/images/logo.svg" alt=""></div>
+  <span id="adv"> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="reviews">ВІДГУКИ</a></span>
+
+
+  <div (click)="toggleNavbar()" id="nav_butt"><img src="./assets/images/Menu Icon.png" alt=""></div>
+</div>
+
+
+<div id="mob_menu" class="d" [ngClass]="{ 'show': navbarOpen }">
+  <span> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="reviews">ВІДГУКИ</a></span>
+
+</div>
+
+<div [ngClass]="{ 'show2': navbarOpen }">
+  <div id="bod" style="display: flex; flex-direction:column;">
+    <span style="text-align: center; display: inline-block; margin-bottom: 50px; font-size: 26px; color: white">ВИДИ БРЕКЕТІВ, ЯКІ МИ ПРОПОНУЄМО</span>
+    <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+      <div class="advantage" style="display: flex; flex-direction: column; align-items: center; gap: 50px; ">
+        <div> <img src="./assets/images/IMG_1065.JPG" alt=""></div>
+        <div class="txt">
+          <div class="highlight">МЕТАЛЕВІ САМОЛІГАТУРНІ AMERICAN ORTHODONTICS/JC (США)</div>брекети без резинок із замочками. Лікування — швидше, відвідування — рідші
+        </div>
+
+      </div>
+      <div style="text-align: center; margin-top: 40px; padding-right: 0px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+          alt=""></div>
+    </div>
+    <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: column; align-items: center; gap: 50px; ">
+          <div> <img id="br2" src="./assets/images/IMG_1073.JPG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">РОДІЄВІ САМОЛІГАТУРНІ
+                AMERICAN ORTHODONTICS/JC (США)</div>ідентичні з попередніми, але із світлим напиленням
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-right: 0px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: column; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/IMG_1074.JPEG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">МЕТАЛЕВІ САМОЛІГАТУРНІ MICO ONE DAMON</div>без резинок, із замочками.
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px; padding-right: px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: column; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/IMG_1076.JPEG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">МЕТАЛЕВІ САМОЛІГАТУРНІ ORTHOCLASSIC H4 (США)</div>без резинок, з ззамочками. Усі переваги попередніх + відоміший виробник
+          </div>
+  
+        </div>
+        <div style="text-align: center; padding-right: 0px; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: column; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/IMG_1077.JPEG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">КЕРАМІЧНІ САМОЛІГАТУРНІ AMERICAN ORTHODONTICS/JC (США)</div>сучасні брекети без резинок, із замочками. Більші за металеві, крихкіші
+
+          </div>
+  
+        </div>
+
+      </div>
+ 
+  </div>
+
+  <footer id="footer" >
+    <span id="foot1">вулиця Минайська, 35А, Ужгород, Закарпатська область, 88000</span>
+    <div id="foot2" ><a style="background-color: #77ABA5" href="https://www.instagram.com/dr.oleksandr_kostenko/"><img  width="40px" src="./assets/images/Instagram.png" alt=""></a>
+      <a style="text-decoration: none;" href="https://www.facebook.com/dr.oleksandr.kostenko/"><img width="40px" src="./assets/images/Facebook_white.png" alt=""></a>
+      <a style="text-decoration: none;" href="tel:0935247313"><img width="40px" src="./assets/images/tel.png" alt=""></a>
+    </div>
+    
+    </footer>
+  
+ </div>
+</body>
+</html>
